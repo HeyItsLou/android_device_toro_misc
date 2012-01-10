@@ -96,9 +96,6 @@ dalvik.vm.stack-trace-file=/data/anr/traces.txt
 # Disable error checking
 ro.kernel.android.checkjni=0
 
-# Force launcher into memory
-ro.HOME_APP_ADJ=1
-
 # Raise JPG quality to 100%
 ro.media.enc.jpeg.quality=100
 

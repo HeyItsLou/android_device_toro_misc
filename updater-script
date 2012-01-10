@@ -1,11 +1,11 @@
-# HeyItsLou updater script for the samsung galaxy nexus toro v4.0
+# HeyItsLou updater script for the samsung galaxy nexus toro v3.0
 ui_print("");
 ui_print("");
 ui_print("");
 ui_print("***********************************************");
 ui_print("Welcome to Redemption Rom For the Galaxy Nexus!");
 ui_print("        Brought to You by HeyItsLou");
-ui_print("            Toro Edition v1.0.3");
+ui_print("            Toro Edition v1.0.2");
 ui_print("***********************************************");
 ui_print("                     .--.                      ");
 ui_print("                    |o_o |                     ");
@@ -88,20 +88,6 @@ set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/lib/drm");
 set_perm(0, 0, 0644, "/system/vendor/lib/drm/libdrmwvmplugin.so");
 set_perm(0, 2000, 0755, "/system/vendor/lib/egl");
 set_perm(0, 2000, 0755, "/system/vendor/lib/hw");
-set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/pittpatt");
-set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-r0-ri20.2d_n2/full_model.bin");
-set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-rn7-ri20.2d_n2/full_model.bin");
-set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/left_eye-y0-yi45-p0-pi45-rp7-ri20.2d_n2/full_model.bin");
-set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-r0-ri20.2d_n2/full_model.bin");
-set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-rn7-ri20.2d_n2/full_model.bin");
-set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/nose_base-y0-yi45-p0-pi45-rp7-ri20.2d_n2/full_model.bin");
-set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-r0-ri20.2d_n2/full_model.bin");
-set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-rn7-ri20.2d_n2/full_model.bin");
-set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.3/right_eye-y0-yi45-p0-pi45-rp7-ri20.2d_n2/full_model.bin");
-set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-r0-ri30.4a/full_model.bin");
-set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-rn30-ri30.5/full_model.bin");
-set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.3/head-y0-yi45-p0-pi45-rp30-ri30.5/full_model.bin");
-set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin");
 set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/res");
 set_perm(0, 0, 0644, "/system/vendor/res/images/dock/dock.png");
 set_perm_recursive(0, 2000, 0755, 0755, "/system/xbin");

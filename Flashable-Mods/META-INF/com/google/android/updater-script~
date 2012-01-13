@@ -1,0 +1,54 @@
+# HeyItsLou mod updater script v2.0
+ui_print("");
+ui_print("");
+ui_print("");
+ui_print("***********************************************");
+ui_print("Welcome to Redemption Rom For the Galaxy Nexus!");
+ui_print("        Brought to You by HeyItsLou");
+ui_print("            Extra Content & Mods");
+ui_print("***********************************************");
+ui_print("                     .--.                      ");
+ui_print("                    |o_o |                     ");
+ui_print("                    |:_/ |                     ");
+ui_print("                   //   \ \                    ");
+ui_print("                  (| RR  | )                   ");
+ui_print("                 /'\_   _/`\                   ");
+ui_print("                 \___)=(___/                   ");
+ui_print("");
+ui_print("***********************************************");
+ui_print("***********************************************");
+ui_print("");
+ui_print("");
+ui_print("");
+
+assert(!less_than_int(1325463543, getprop("ro.build.date.utc")));
+assert(getprop("ro.product.device") == "toro" ||
+       getprop("ro.build.product") == "toro");
+
+show_progress(0.500000, 0);
+
+ui_print("Mounting Data & Deleting Dalvik-Cache");
+run_program("/sbin/busybox", "mount", "/data");
+delete_recursive("/data/dalvik-cache");
+
+ui_print("Mounting System & Writing Mod");
+run_program("/sbin/busybox", "mount", "/system");
+delete("/system/app/Contacts.apk");
+delete("/system/app/Phone.apk");
+package_extract_dir("system", "/system");
+
+ui_print("Unmounting System Finishing Install");
+unmount("/system");
+show_progress(0.100000, 0);
+ui_print("");
+ui_print("");
+ui_print("");
+ui_print("");
+ui_print("***********************************************");
+ui_print("     Thank You For Choosing Redemption Rom!");
+ui_print("***********************************************");
+
+
+
+
+
